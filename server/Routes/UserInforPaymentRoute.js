@@ -2,7 +2,7 @@ import express from "express"
 import{CreateDetails,getAllDetails,updateDetailsById,deleteDetailsById,getOneDetails} from '../Controller/UserPaymentController.js'
 
 const router = express.Router();
-
+//routes
 
 router.post('/userInfoPaymentCreation', CreateDetails);
 router.get('/userInfoPaymentGet', getAllDetails);
