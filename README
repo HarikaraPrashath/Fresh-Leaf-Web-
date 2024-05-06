@@ -1,0 +1,40 @@
+// const handleUpdate = async (e) => {
+  //   e.preventDefault();
+
+  //   try {
+  //     const response = await fetch(`http://localhost:3001/updateProduct/${id}`, {
+  //       method: 'PUT',
+  //       headers: {
+  //         'Content-Type': 'application/json'
+  //       },
+  //       body: JSON.stringify({ name, email, gender, experience, batch })
+  //     });
+
+  //     if (!response.ok) {
+  //       throw new Error('Failed to update product');
+  //     }
+
+  //     alert('Product updated successfully!');
+  //     navigate('/home');
+  //   } catch (error) {
+  //     console.error('Error updating product:', error);
+  //   }
+  // };
+
+   // useEffect(() => {
+  //   fetch(`http://localhost:3001/getProduct/${id}`)
+  //     .then(response => {
+  //       if (!response.ok) {
+  //         throw new Error('Failed to fetch product');
+  //       }
+  //       return response.json();
+  //     })
+  //     .then(data => {
+  //       setName(data.name);
+  //       setEmail(data.email);
+  //       setGender(data.gender);
+  //       setExperience(data.experience);
+  //       setBatch(data.batch);
+  //     })
+  //     .catch(error => console.error('Error fetching product:', error));
+  // }, [id]);
