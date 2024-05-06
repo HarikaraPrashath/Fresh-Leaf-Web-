@@ -39,7 +39,7 @@ function userFeedBack() {
       <Navbar/>
 
       <div className='w-[00px] ml-[600px]'>
-  <label className="relative"> {/* Ensures the label is positioned relative for absolute positioning of the icon */}
+  <label className="relative"> 
     <span className='sr-only'>Search</span>
     <span className='absolute inset-y-0 left-0 flex items-center pl-2'>
       <svg className='fill-slate-300 w-5 h-5' viewBox='0 0 20 20'></svg>

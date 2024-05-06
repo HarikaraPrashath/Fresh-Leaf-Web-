@@ -20,7 +20,7 @@ function MarketingInfo() {
       })
       .catch((err) => console.error(err)); // Log any errors
   }, []);
-
+//pdf generation
   const generatePDF = () => {
     const doc = new jsPDF();
     const tableColumn = ["Advertisement name", "Description", "Start Duration","End Duration"];
