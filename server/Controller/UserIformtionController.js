@@ -1,6 +1,6 @@
 import userInfor from "../Models/UserInformationDetailsModel.js";
 
-//Data Create
+//Data Create in database
 export const CreateDetails = async (req, res) => {
     const {name,email,mobile,city,posterCode} = req.body;
   

@@ -17,7 +17,7 @@ function UserInformationUpdate() {
   const { id } = useParams();
 
 
- 
+ //fetchdata
      
   useEffect(() => {
     axios

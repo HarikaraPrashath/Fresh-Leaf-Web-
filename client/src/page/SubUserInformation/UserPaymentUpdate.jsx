@@ -19,7 +19,7 @@ function UserProductUpdate() {
   
 
 
-  
+  //fetch
   useEffect(() => {
     axios
       .get(`http://localhost:3001/server/userInfoPayment/userInfoPaymentGetOne/${id}`)

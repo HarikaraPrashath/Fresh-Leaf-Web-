@@ -1,6 +1,6 @@
 import express from "express"   
 import{CreateDetails,getAllDetails,updateDetailsById,deleteDetailsById,getOneDetails} from '../Controller/UserIformtionController.js'
-
+//routes
 const router = express.Router();
 
 

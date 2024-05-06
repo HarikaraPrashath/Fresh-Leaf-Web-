@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-
+//userpay model
 const Schema = mongoose.Schema;
 const UserInforPayment = new Schema(
   {

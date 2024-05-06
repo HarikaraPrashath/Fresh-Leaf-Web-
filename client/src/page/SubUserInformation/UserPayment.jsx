@@ -181,7 +181,7 @@ const handleSubmit = async (e) => {
                   </tr>
                 </thead>
                 <tbody>
-                  {/* get all data from db */}
+                
                   {UserProfile.map((profile, index) => (
                     <tr key={index}>
                       <td>{profile.fname}</td>

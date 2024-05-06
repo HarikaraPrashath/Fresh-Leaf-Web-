@@ -13,6 +13,8 @@ import { FaFilePdf } from "react-icons/fa";
 import axios from 'axios';
 import { FaFileExcel } from "react-icons/fa6"
 
+
+//owner
 function OwnerPage() {
   const [filteredProfile, setFilteredProfile] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -75,7 +77,7 @@ function OwnerPage() {
     const doc = new jsPDF();
     const imgData = Logo; 
     doc.addImage(imgData, 'JPEG', 150, 10, 45, 25); 
-    doc.setFontSize(5);
+    doc.setFontSize(20);
     doc.setFont("serif");
     doc.text("FRESH LEAF:Since 1960 ", doc.internal.pageSize.width / 2, 45, { align: 'center' }); 
     doc.setFontSize(5);
@@ -97,13 +99,9 @@ function OwnerPage() {
    doc.line(5, startY - 8, doc.internal.pageSize.width - 25, startY - 8); 
    doc.setFontSize(12);
    doc.text("Signature: ________", 10, startY-20); 
-
-
-
-
-    doc.autoTable(tableColumn, tableRows, { startY: 20 });
+  // doc.autoTable(tableColumn, tableRows, { startY: 20 });
     doc.save('User_Information_data.pdf');
-  };6
+  };
 
   // Filtering profiles based on search term
   const filteredProfiles = filteredProfile.filter(profile =>

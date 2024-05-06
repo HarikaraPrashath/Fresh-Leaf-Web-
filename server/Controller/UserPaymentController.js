@@ -1,5 +1,5 @@
 import userInforPayment from "../Models/UserInformationPaymentModel.js";
-
+//create
 export const CreateDetails = async (req, res) => {
     const { fname, lname, city, address ,postalCode,cnumber} = req.body;
   
