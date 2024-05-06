@@ -36,7 +36,7 @@ export default function PaymentUpdate() {
   const handleUpdate = (e) => {
     e.preventDefault();
 
-    // Validate input before submitting
+    // Validate input before submitting data
     if (!validate()) {
       return;
     }

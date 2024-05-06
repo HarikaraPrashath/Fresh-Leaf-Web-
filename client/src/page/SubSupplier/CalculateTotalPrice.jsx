@@ -24,7 +24,7 @@ const Calculator = () => {
             setDisplay(display + ' ' + value + ' ');
         }
     };
-
+//calculator equal 
     const handleEqual = () => {
         if (previousNumber !== '' && currentNumber !== '') {
             let result;
@@ -64,6 +64,7 @@ const Calculator = () => {
         flex-direction: column;
         align-items: center">
             <div className="w-full h-16 mb-4 text-3xl font-bold text-right p-2 bg-white border border-gray-300 rounded-md">{display || '0'}</div>
+            
             <div className="grid grid-cols-4 gap-4">
                 <button className="w-full h-20 text-xl border border-gray-300 rounded-md bg-white hover:bg-gray-100 focus:outline-none" onClick={() => handleNumberClick('1')}>1</button>
                 <button className="w-full h-20 text-xl border border-gray-300 rounded-md bg-white hover:bg-gray-100 focus:outline-none" onClick={() => handleNumberClick('2')}>2</button>

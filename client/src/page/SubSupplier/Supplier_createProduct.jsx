@@ -69,7 +69,7 @@ export default function SupplierCreateProduct() {
         let errors = {};
         let isValid = true;
       
-        // Validation for ID
+        // Validation for IDs
         if (!String(Id).trim()) {
             errors.Id = 'ID is required';
             isValid = false;

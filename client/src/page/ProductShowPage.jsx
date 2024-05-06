@@ -11,7 +11,7 @@ function ProductShowPage() {
 
     useEffect(() => {
       axios
-        .get("http://localhost:3001/server/inventoryapi/inventoryGetAll") // Provide the correct URL here
+        .get("http://localhost:3001/server/inventoryapi/inventoryGetAll") // Provide the correct URLs here
         .then((result) => {
           console.log("data: ", typeof result.data.data); // Check the fetched data
           console.log("data: ", Object.values(result.data.data)); // Check the fetched data

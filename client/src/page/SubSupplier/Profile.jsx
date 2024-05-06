@@ -60,7 +60,7 @@ export default function Profile() {
       isValid = false;
     }
 
-    // Validation for Email Address
+    // Validation for Email Addresses
     if (!Email_address) {
       errors.Email_address = "Email address is required";
       isValid = false;

@@ -53,7 +53,7 @@ export default function UpdateProfileDetails() {
   const toggleShowId = () => {
     setShowId(!showId);
   };
-
+//validation
   const validate = () => {
     let errors = {};
     let isValid = true;

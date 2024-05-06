@@ -83,7 +83,7 @@ export default function Payment() {
       isValid = false;
     }
 
-    // Validation for Card Number
+    // Validation for Card Numberr
     if (!Card_Number) {
       errors.Card_Number = "Card number is required";
       isValid = false;

@@ -99,7 +99,7 @@ function SupplierInfo() {
     doc.setFontSize(10);
     doc.text(`Report generated on: ${currentDate}`, 10, 10);
     
-    // table
+    // tablegeneration
     const tableColumn = ["ID", "Name", "Quantity", "Net Weight(g)", "Total Price(Rs.)"];
     const tableRows = searchResults.map(product => [
         product.Id,

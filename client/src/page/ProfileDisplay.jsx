@@ -6,7 +6,7 @@ import Navbarl from "../component/Navbarl";
 
 const ProfileDisplay = () => {
   const [SupllierProfile, setSupllierProfile] = useState([]);
-
+//get
   useEffect(() => {
     axios.get("http://localhost:3001/server/supplier/getallProfile")
       .then((result) => {

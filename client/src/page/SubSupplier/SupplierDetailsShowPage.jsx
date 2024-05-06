@@ -8,6 +8,7 @@ import Navbarl from "../../component/Navbarl";
 function SupplierDetailsShowPage() {
   const [SupplierProfile, setSupplierProfile] = useState([]);
 
+//get all the profile details
   useEffect(() => {
       axios
           .get("http://localhost:3001/server/supplier/getallProfile")
@@ -21,6 +22,7 @@ function SupplierDetailsShowPage() {
       console.log(SupplierProfile, "data calling");
   }, []);
 
+//deletion
   const handleDelete = (id) => {
       axios
           .delete(`http://localhost:3001/server/supplier/Profiledelete/${id}`)

@@ -26,7 +26,7 @@ const ProductDetails = () => {
             console.error('Error fetching products:', error);
         }
     };
-
+//deletion
     const handleDelete = (id) => {
         axios.delete(`http://localhost:3001/server/supplier/supplierDelete/${id}`)
             .then(res => {

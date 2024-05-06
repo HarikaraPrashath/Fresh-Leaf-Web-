@@ -31,7 +31,7 @@ export default function Supplier_updateProduct() {
       .catch((err) => console.log(err));
   }, [id]);
 
-  // Function to calculate total price based on quantity and unit price
+  // Function to calculate total price based on quantity and unit prices
   const calculateTotalPrice = () => {
     const totalPrice = parseFloat(qty) * parseFloat(unitprice);
     setTotalprice(totalPrice.toFixed(2)); // Ensure total price is formatted as currency with 2 decimal places
