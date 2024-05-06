@@ -12,7 +12,7 @@ const ReviewSchema = new Schema(
       type: String,
       required: true
     },
-    des: { // Corrected field name from "dec" to "des"
+    des: { 
       type: String,
       required: true
     }    

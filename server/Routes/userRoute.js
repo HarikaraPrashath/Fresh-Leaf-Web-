@@ -1,6 +1,6 @@
 import express from "express";
 import { CreateDetails, getAllDetails, getOneDetails, updateDetailsById, deleteDetailsById } from "../Controller/userController.js";
-
+//userroute
 const route = express.Router();
 
 route.post("/CreateDetails", CreateDetails);

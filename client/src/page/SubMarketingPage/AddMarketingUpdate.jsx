@@ -9,7 +9,7 @@ function AddMarketingUpdate() {
   const [duration, setDuration] = useState("");
   const navigate = useNavigate();
   const { id } = useParams();
-
+//fetch
   useEffect(() => {
     axios
       .get(`http://localhost:3001/server/MarketingActivity/getOneDetails/${id}`)

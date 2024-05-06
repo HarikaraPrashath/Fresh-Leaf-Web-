@@ -26,4 +26,4 @@ const userSchema = new Schema(
 
 const UserAdd = mongoose.model("Ads", userSchema);
 
-export default UserAdd; // Export the UserAdd model as the default export
+export default UserAdd; 

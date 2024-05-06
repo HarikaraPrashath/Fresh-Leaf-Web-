@@ -1,5 +1,5 @@
 import add  from "../Models/userModel.js";
-
+//create
 export const CreateDetails = async (req, res) => {
     const { name, des, duration,duratione} = req.body;
   
