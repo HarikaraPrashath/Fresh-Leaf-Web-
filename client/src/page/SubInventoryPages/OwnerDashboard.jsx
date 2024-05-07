@@ -29,6 +29,7 @@ export default function OwnerDashboard() {
             <Link value = 'payment info'className='btn'>Payment info</Link>
             <Link value = 'feedback info'className='btn'>Feedback info</Link>
 
+{/* idaiyila varathu */}
         </div>
         <div className=' w-[900px] pr-4 pl-4\3 h-[500px] flex'>
             <div className='mr-4 pr-4 '>

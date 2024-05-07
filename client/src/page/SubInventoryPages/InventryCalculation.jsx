@@ -133,6 +133,7 @@ export default function InventryCalculation() {
   <div className="flex flex-row">
     <h3 className="mb-2 font-serif text-2xl ml-5"> Products</h3>
 
+      {/* input data  */}
     <table className="w-1/2 bg-amber-200 bg rounded p-3 ml-[300px] backdrop-grayscale-0 bg-white/30">
       <thead>
         <tr>

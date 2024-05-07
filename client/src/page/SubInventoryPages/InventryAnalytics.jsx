@@ -77,6 +77,7 @@ export default function InventryAnalytics() {
             
           </div>
         </div>
+        {/* stock details */}
            <div className='w-[20%] h-auto flex-grow border rounded-br-2xl rounded-tl-2xl mx-3 '>
                <main className='main-cards pl-[200px] pb-4'>
                    <div className='card ml-[70px] mt-4'>

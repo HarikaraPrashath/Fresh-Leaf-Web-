@@ -13,6 +13,7 @@ export default function InventryUpdateform() {
     const [price, setPrice] = useState("");
     const [des, setdes] = useState([]); // Corrected spelling
     
+    // gete data
     useEffect(() => {
         axios
           .get(`http://localhost:3001/server/inventoryapi/inventoryGetOne/${id}`)
@@ -28,6 +29,7 @@ export default function InventryUpdateform() {
           .catch((err) => console.log(err));
       }, [id]);
     
+      // update code
       const handleUpdate = (e) => {
         e.preventDefault();
         axios
@@ -99,15 +101,15 @@ export default function InventryUpdateform() {
                 />
               </div>
               <div className="mb-2 ">
-                                    <label htmlFor="">Description</label>
-                                    <input
-                                            type="text"
-                                            placeholder="Enter the Description"
-                                            className="w-full p-2 border rounded"
-                                            value={des}
-                                            onChange={(e) => setdes(e.target.value)}
-                                        />
-                                </div>
+                <label htmlFor="">Description</label>
+                <input
+                        type="text"
+                        placeholder="Enter the Description"
+                        className="w-full p-2 border rounded"
+                        value={des}
+                        onChange={(e) => setdes(e.target.value)}
+                />
+              </div>
               <button className='w-[150px] h-[40px] bg-green-900 text-white rounded-xl text-center ml-96 mt-6'>Update</button>
             </form>
             <div className='flex flex-row p-3 justify-between font-serif'>

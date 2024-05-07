@@ -187,6 +187,7 @@ export default function InventryAddtoform() {
                             </div>
 
                             <div>
+                                {/* label la cheak panni pakka  */}
                             {/* <div className="text-center font-bold mt-4 mb-8">
                                 {Object.entries(itemCountMap).map(([itemName, count]) => (
                                     count < 2 && <p key={itemName}>"{itemName}" is low stock</p>

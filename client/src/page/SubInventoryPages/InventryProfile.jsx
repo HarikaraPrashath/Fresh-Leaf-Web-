@@ -39,7 +39,7 @@ export default function InventryProfile() {
     .catch(err=>console.log(err))
   }
 
-
+//  inventory create details
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -72,6 +72,7 @@ export default function InventryProfile() {
   return (
     <>
     <Navbar/>
+    {/* side bar */}
     <div className=' flex flex-row ' >
     <div className="flex w-[300px] h-[1200px] bg-lime-900">
           <div className="p-5">
