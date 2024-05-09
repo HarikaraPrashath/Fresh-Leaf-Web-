@@ -22,6 +22,11 @@ function StaffManagerAccount() {
 
     if (!name) {
       newErrors.name = "Name is required.";
+    } else {
+      const namePattern = /^[a-zA-Z\s]+$/; 
+      if (!namePattern.test(name)) {
+        newErrors.name = "Name must contain only letters and spaces.";
+      }
     }
 
     if (!email) {
@@ -105,7 +110,7 @@ function StaffManagerAccount() {
     <div>
       <Navbar />
       <div className="flex">
-        <div className="flex w-[300px] h-[1200px] bg-lime-900">
+        <div className="flex w-[300px] h-[725px] bg-lime-900">
           <div className="p-5">
             <button className="w-[230px] h-[40px] bg-gray-500 text-white rounded-2xl text-center my-3">
               <Link to="/StaffManagerAccount">StaffManagerAccount</Link>
@@ -122,36 +127,40 @@ function StaffManagerAccount() {
           </div>
         </div>
         <div>
-          <h1 className="text-3xl  ml-[420px]">Staff Account Manager</h1>
-          <div className="w-[150px] h-[150px] rounded-full ml-[500px] mt-5 bg-gray-300 pt-3 -mb-[150px]">
-            <img src={userPic} alt="user image" className="w-[100px] h-[100px] m-auto" />
-          </div>
-          <div className="w-[700px] h-[820px] bg-gray-300 rounded-lg ml-52 mt-48">
+          <h1 className="text-3xl  ml-[420px] mb-6">Staff Account Manager</h1>
+        
+          <div className="w-[1200px] h-[520px] bg-gray-300 rounded-lg ml-1 ">
             <form className="px-6 py-8" onSubmit={handleSubmit}>
 
-            <label className="font-bold ml-5 text-xl">Name</label>
+           <div className="flex">
+            <div>
+           <label className="font-bold ml-5 text-xl">Name</label>
               <input
-                className={`w-[600px] h-[50px] ml-3 rounded-3xl px-5 py-2 my-4 ${errors.name ? 'border-red-500' : ''}`}
+                className={`w-[500px] h-[50px] ml-3 rounded-3xl px-5 py-2 my-4 ${errors.name ? 'border-red-500' : ''}`}
                 type="text"
                 placeholder="Username"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-              /><br/>
+              />
               {errors.name && <span className="text-red-600 ml-[400px] ">{errors.name}</span>}
-                <br/>
+              </div>
+              <div>
               <label className="font-bold ml-5 text-xl">Email-address</label>
               <input
-                className={`w-[600px] h-[50px] ml-3 rounded-3xl px-5 py-2 my-4 ${errors.email ? 'border-red-500' : ''}`}
-                type="text"
+                className={`w-[500px] h-[50px] ml-3 rounded-3xl px-5 py-2 my-4 ${errors.email ? 'border-red-500' : ''}`}
+                type="email"
                 placeholder="Email-address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-              /> <br/>
+              /> 
               {errors.email && <span className="text-red-600 ml-[400px]">{errors.email}</span>}
-              <br/>
+              </div>
+           </div>
+             <div className="flex">
+              <div>
               <label className="font-bold ml-5 text-xl">Gender</label>
               <select
-                className="w-[600px] h-[50px] ml-3 rounded-3xl px-5 py-2 my-4"
+                className="w-[500px] h-[50px] ml-3 rounded-3xl px-5 py-2 my-4"
                 name="gender"
                 onChange={(e) => {
                   setGender(e.target.value);
@@ -169,27 +178,33 @@ function StaffManagerAccount() {
                 <option value="others">others</option>
               </select> <br/>
               {errors.gender && <p className="text-red-600 ml-[400px]">{errors.gender}</p>}
-              <br/>
+              </div>
+              <div>
               <label className="font-bold ml-5 text-xl">Experience</label>
               <input
-                className={`w-[600px] h-[50px] ml-3 rounded-3xl px-5 py-2 my-4 ${errors.exprience ? 'border-red-500' : ''}`}
-                type="text"
+                className={`w-[500px] h-[50px] ml-3 rounded-3xl px-5 py-2 my-4 ${errors.exprience ? 'border-red-500' : ''}`}
+                type="number"
                 placeholder="Experience"
                 value={exprience}
                 onChange={(e) => setExprience(e.target.value)}
               /> <br/>
               {errors.exprience && <span className="text-red-600 ml-[400px]">{errors.exprience}</span>}
-              <br/>
-              <label className="font-bold ml-5 text-xl">Branch</label>
+              
+              </div>
+             </div>
+            
+              
+              <label className="font-bold ml-5 text-xl">Branch</label><br></br>
               <input
-                className={`w-[600px] h-[50px] ml-3 rounded-3xl px-5 py-2 my-4 ${errors.branch ? 'border-red-500' : ''}`}
+                className={`w-[500px] h-[50px] ml-3 rounded-3xl px-5 py-2 my-4 ${errors.branch ? 'border-red-500' : ''}`}
+                type="number"
                 placeholder="Branch"
                 value={branch}
                 onChange={(e) => setBranch(e.target.value)}
               />
               {errors.branch && <span className="text-red-600 ml-[400px]">{errors.branch}</span>}
-
-              <button className="w-[650px] h-[40px] bg-green-900 text-white rounded-xl text-center ml-1 mt-6">
+<br></br>
+              <button className="w-[350px] h-[40px] bg-green-900 text-white rounded-xl text-center ml-[390px] mt-6">
                 Create
               </button>
             </form>

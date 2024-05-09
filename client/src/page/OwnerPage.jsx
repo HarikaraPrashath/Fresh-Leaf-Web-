@@ -129,7 +129,7 @@ function OwnerPage() {
               <Link to='/inventryProfile'>Inventory Infor</Link>
             </button>
             <button className='w-[230px] h-[40px] bg-gray-200 rounded-2xl text-center my-3'>
-              <Link to='/'>Staff Infor</Link>
+              <Link to='/StaffInforClient'>Staff Infor</Link>
             </button>
             <button className='w-[230px] h-[40px] bg-gray-200 rounded-2xl text-center my-3'>
               <Link to='/'>Shipment Infor</Link>
