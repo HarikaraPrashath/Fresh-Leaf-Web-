@@ -116,7 +116,7 @@ function UserAccount() {
           <h1 className="text-3xl ml-[430px] text-green-600 ">
             User Information
           </h1>
-          <div className="w-[150px] h-[150px]  rounded-full  mt-8 bg-gray-300 pt-5 -mb-[150px] ml-[450px]">
+          <div className="w-[50px] h-[150px]  rounded-full  mt-8 bg-gray-300 pt-5 -mb-[150px] ml-[450px]">
             <img
               src={userPic}
               alt="user image"
